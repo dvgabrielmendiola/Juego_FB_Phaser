@@ -136,10 +136,10 @@ function preload() {
     })
 
     //Audio
-    this.load.audio('up', 'assets/wing.mp3');
-    this.load.audio('die', 'assets/die.mp3');
-    this.load.audio('hit', 'assets/hit.mp3');
-    this.load.audio('point', 'assets/point.mp3');
+    // this.load.audio('up', 'assets/wing.mp3');
+    // this.load.audio('die', 'assets/die.mp3');
+    // this.load.audio('hit', 'assets/hit.mp3');
+    // this.load.audio('point', 'assets/point.mp3');
 
 
     // Pipes
@@ -306,7 +306,7 @@ function update() {
     if (framesMoveUp > 0)
     {
         framesMoveUp--
-        this.sound.play('up')
+        //this.sound.play('up')
     }
     
         
@@ -345,7 +345,7 @@ function update() {
 
 
 function hitBird(player) {
-    this.sound.play('hit')
+    //this.sound.play('hit')
     this.physics.pause()
 
     gameOver = true
@@ -361,7 +361,7 @@ function hitBird(player) {
 
 function updateScore(_, gap) {
     score++
-    this.sound.play('point')
+    //this.sound.play('point')
     gap.destroy()
 
     if (score % 10 == 0) {
