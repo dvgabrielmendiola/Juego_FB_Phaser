@@ -136,10 +136,10 @@ function preload() {
     })
 
     //Audio
-    this.load.audio('up', '/assets/wing.mp3');
-    this.load.audio('die', '/assets/die.mp3');
-    this.load.audio('hit', '/assets/hit.mp3');
-    this.load.audio('point', '/assets/point.mp3');
+    this.load.audio('up', 'assets/wing.mp3');
+    this.load.audio('die', 'assets/die.mp3');
+    this.load.audio('hit', 'assets/hit.mp3');
+    this.load.audio('point', 'assets/point.mp3');
 
 
     // Pipes
