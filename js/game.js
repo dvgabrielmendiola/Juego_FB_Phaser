@@ -337,7 +337,7 @@ function update() {
     })
 
     nextPipes++
-    if (nextPipes === 130) {
+    if (nextPipes === 200) {
         makePipes(game.scene.scenes[0])
         nextPipes = 0
     }
@@ -381,7 +381,7 @@ function updateScore(_, gap) {
 function makePipes(scene) {
     if (!gameStarted || gameOver) return
 
-    const pipeTopY = Phaser.Math.Between(-120, 120)
+    const pipeTopY = Phaser.Math.Between(-80, 80)
 
     const gap = scene.add.line(480, pipeTopY + 210, 0, 0, 0, 50)
     gapsGroup.add(gap)
