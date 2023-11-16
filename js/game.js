@@ -316,7 +316,7 @@ function update() {
     }
         
     else {
-        player.setVelocityY(120)
+        player.setVelocityY(80)
 
         if (player.angle < 90)
             player.angle += 1
@@ -337,7 +337,7 @@ function update() {
     })
 
     nextPipes++
-    if (nextPipes === 200) {
+    if (nextPipes === 250) {
         makePipes(game.scene.scenes[0])
         nextPipes = 0
     }
